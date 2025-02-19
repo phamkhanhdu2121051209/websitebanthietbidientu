@@ -1,0 +1,169 @@
+body{
+    background-image: url(/Images/background.jpg);
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+
+
+
+.Menu-box{
+ul{
+    /* xóa các dấu đầu dòng trong danh sách */
+    list-style-type:none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+
+ul li{
+    /* Đặt các mục trong danh sách theo hàng ngang */
+    display: inline;
+   
+}
+
+ul li a{
+    /* Định dạng cho các liên kết */
+    text-decoration: none;
+    display: inline-block;
+}
+
+.Menu-sup{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 300px;
+}
+.product{
+    position: relative;
+}
+.product:hover .block-menu{
+    display: block;
+}
+.product:hover .block-menu .Menu-sup li a {
+    color: white;
+}
+.product .block-menu .Menu-sup li:hover a{
+    color: black;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    background-color: burlywood;
+}
+.nav li{
+    padding: 15px 15px;
+}
+.nav li a {
+    color: white;
+}
+.nav li:hover{
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+.nav li:hover a{
+    color: black
+}
+.block-menu{
+    position: absolute;
+    display: none;
+    background-color: rgb(45, 39, 43);
+    top: 54px;
+    left: 0;
+}
+.shoppe{
+    text-decoration: none;
+    
+}
+.inputtt{
+    width: 200px;
+    outline: none;
+    border: 0;
+    padding: 5px 10px
+}
+.button{
+    padding: 5px 10px;
+    border: 0;
+    cursor: pointer;
+}
+.selectOp{
+    padding: 5px 10px;
+    border: 0;
+}
+.blockSearch{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Bố cục sản phẩm */
+.product-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+.product-name {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 16px;
+    color: green;
+    margin-bottom: 10px;
+}
+.Menu-box{
+    width: 100%;
+    position: relative;
+    padding: 8px 0;
+}
+.imageMain{
+    background-color: aqua;
+    width :160px ;
+    height: 65px;
+    background: url('../Images/DDH.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+
+
+
+
+}
